@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_183fd8debfa323e621ac54fd77eac365 {
+                    position: relative;
+                    width: 500.0px;
+                    height: 700.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_183fd8debfa323e621ac54fd77eac365" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_183fd8debfa323e621ac54fd77eac365 = L.map(
+                "map_183fd8debfa323e621ac54fd77eac365",
+                {
+                    center: [40.77304320670044, -73.97308241208205],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a8a5dd1dc3af8f36f79bbcc79eea4c86 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_a8a5dd1dc3af8f36f79bbcc79eea4c86.addTo(map_183fd8debfa323e621ac54fd77eac365);
+    
+            var marker_6c3727db3d8c4a4b2fc25915906609d1 = L.marker(
+                [40.813674196882, -73.941339829799],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_77273087b075dd6b6e599f640f920b94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6c3727db3d8c4a4b2fc25915906609d1.setIcon(icon_77273087b075dd6b6e599f640f920b94);
+        
+    
+        var popup_26b8a2e6bb4692e90e2ab2a6d54fc917 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cf34dfe281b5274ca88c2cb2e6ad77a = $(`<div id="html_4cf34dfe281b5274ca88c2cb2e6ad77a" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CLAYTON APARTMENTS 485 Lenox Avenue New York, NY 10037<br><b>No of Apartments:</b> 159</div>`)[0];
+                popup_26b8a2e6bb4692e90e2ab2a6d54fc917.setContent(html_4cf34dfe281b5274ca88c2cb2e6ad77a);
+            
+        
+
+        marker_6c3727db3d8c4a4b2fc25915906609d1.bindPopup(popup_26b8a2e6bb4692e90e2ab2a6d54fc917)
+        ;
+
+        
+    
+    
+            marker_6c3727db3d8c4a4b2fc25915906609d1.bindTooltip(
+                `<div>
+                     CLAYTON APARTMENTS
+485 Lenox Avenue New York, NY 10037
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35c7f84ee0d57598e0c481359c224998 = L.marker(
+                [40.714658648108, -73.99636022467],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_46842ac85c11e111f72a3486e013a888 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_35c7f84ee0d57598e0c481359c224998.setIcon(icon_46842ac85c11e111f72a3486e013a888);
+        
+    
+        var popup_dc6e3d8f3f92e876f70e9d0f2086cb17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b141ccc44952d95beb50d692fde388f = $(`<div id="html_5b141ccc44952d95beb50d692fde388f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CONFUCIUS PLAZA 10 Confucius Plaza New York, NY 10002<br><b>No of Apartments:</b> 760</div>`)[0];
+                popup_dc6e3d8f3f92e876f70e9d0f2086cb17.setContent(html_5b141ccc44952d95beb50d692fde388f);
+            
+        
+
+        marker_35c7f84ee0d57598e0c481359c224998.bindPopup(popup_dc6e3d8f3f92e876f70e9d0f2086cb17)
+        ;
+
+        
+    
+    
+            marker_35c7f84ee0d57598e0c481359c224998.bindTooltip(
+                `<div>
+                     CONFUCIUS PLAZA
+10 Confucius Plaza New York, NY 10002
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7854faeff6e2bf9986abbe07640121c = L.marker(
+                [40.737359691755, -73.979107166631],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_ced99aef50c6ca3dd419dfd7e8f28f23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a7854faeff6e2bf9986abbe07640121c.setIcon(icon_ced99aef50c6ca3dd419dfd7e8f28f23);
+        
+    
+        var popup_421a8f1b272dbe4fffa3dc1fb942d671 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74b674ad6953494ff18c57323c43883d = $(`<div id="html_74b674ad6953494ff18c57323c43883d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> EAST MIDTOWN PLAZA 333 East 23th Street New York, NY 10010<br><b>No of Apartments:</b> 746</div>`)[0];
+                popup_421a8f1b272dbe4fffa3dc1fb942d671.setContent(html_74b674ad6953494ff18c57323c43883d);
+            
+        
+
+        marker_a7854faeff6e2bf9986abbe07640121c.bindPopup(popup_421a8f1b272dbe4fffa3dc1fb942d671)
+        ;
+
+        
+    
+    
+            marker_a7854faeff6e2bf9986abbe07640121c.bindTooltip(
+                `<div>
+                     EAST MIDTOWN PLAZA
+333 East 23th Street New York, NY 10010
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9f5587f0b13f734c6dd58ed2892a4fa = L.marker(
+                [40.791573631946, -73.938234827452],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_884971d88f9b81fd3b2c38e440a5fd51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d9f5587f0b13f734c6dd58ed2892a4fa.setIcon(icon_884971d88f9b81fd3b2c38e440a5fd51);
+        
+    
+        var popup_5a4159e5e5630e1a4195ae13105ebecf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afca15abf1dba5bb07cb6c0a4f78b2bc = $(`<div id="html_afca15abf1dba5bb07cb6c0a4f78b2bc" style="width: 100.0%; height: 100.0%;"><b>Name:</b> 1199 HOUSING 2120 First Avenue New York, NY 10029<br><b>No of Apartments:</b> 1,586</div>`)[0];
+                popup_5a4159e5e5630e1a4195ae13105ebecf.setContent(html_afca15abf1dba5bb07cb6c0a4f78b2bc);
+            
+        
+
+        marker_d9f5587f0b13f734c6dd58ed2892a4fa.bindPopup(popup_5a4159e5e5630e1a4195ae13105ebecf)
+        ;
+
+        
+    
+    
+            marker_d9f5587f0b13f734c6dd58ed2892a4fa.bindTooltip(
+                `<div>
+                     1199 HOUSING
+2120 First Avenue New York, NY 10029
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_839876521aa8f05832a4941d1d1666c0 = L.marker(
+                [40.823571549112, -73.937486784072],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_b2cab784e7f142730bc3ea78d031af60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_839876521aa8f05832a4941d1d1666c0.setIcon(icon_b2cab784e7f142730bc3ea78d031af60);
+        
+    
+        var popup_42162ac9941a857ffdbca3d684e830b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cdd3c2a7ff6c059b6dcbb6e2989c51b = $(`<div id="html_8cdd3c2a7ff6c059b6dcbb6e2989c51b" style="width: 100.0%; height: 100.0%;"><b>Name:</b> ESPLANADE GARDENS 2569 Seventh Avenue New York, NY 10039<br><b>No of Apartments:</b> 1,870</div>`)[0];
+                popup_42162ac9941a857ffdbca3d684e830b1.setContent(html_8cdd3c2a7ff6c059b6dcbb6e2989c51b);
+            
+        
+
+        marker_839876521aa8f05832a4941d1d1666c0.bindPopup(popup_42162ac9941a857ffdbca3d684e830b1)
+        ;
+
+        
+    
+    
+            marker_839876521aa8f05832a4941d1d1666c0.bindTooltip(
+                `<div>
+                     ESPLANADE GARDENS
+2569 Seventh Avenue New York, NY 10039
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc496de2f947731cd1416d531fc32bc1 = L.marker(
+                [40.79170485064, -73.941925127964],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_97aa1e2418a450a39ea7e60a260242a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bc496de2f947731cd1416d531fc32bc1.setIcon(icon_97aa1e2418a450a39ea7e60a260242a1);
+        
+    
+        var popup_786596edf26781ce122919bc216cc4a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f78403cf8460444ad1538114b237e226 = $(`<div id="html_f78403cf8460444ad1538114b237e226" style="width: 100.0%; height: 100.0%;"><b>Name:</b> FRANKLIN PLAZA 2085 Second Avenue New York, NY 10029<br><b>No of Apartments:</b> 1,632</div>`)[0];
+                popup_786596edf26781ce122919bc216cc4a1.setContent(html_f78403cf8460444ad1538114b237e226);
+            
+        
+
+        marker_bc496de2f947731cd1416d531fc32bc1.bindPopup(popup_786596edf26781ce122919bc216cc4a1)
+        ;
+
+        
+    
+    
+            marker_bc496de2f947731cd1416d531fc32bc1.bindTooltip(
+                `<div>
+                     FRANKLIN PLAZA
+2085 Second Avenue New York, NY 10029
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ed741e7e92b4e9d44e06475d15d0b45 = L.marker(
+                [40.792898349833, -73.970928189331],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_b9904241d156e235abded52f00cac55c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1ed741e7e92b4e9d44e06475d15d0b45.setIcon(icon_b9904241d156e235abded52f00cac55c);
+        
+    
+        var popup_5210488aefe62d02c39c3f981bab3524 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eefc54c8834a4c4ce22cae53850eb38b = $(`<div id="html_eefc54c8834a4c4ce22cae53850eb38b" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GODDARD-RIVERSIDE 711 Amsterdam Avenue New York, NY 10025<br><b>No of Apartments:</b> 193</div>`)[0];
+                popup_5210488aefe62d02c39c3f981bab3524.setContent(html_eefc54c8834a4c4ce22cae53850eb38b);
+            
+        
+
+        marker_1ed741e7e92b4e9d44e06475d15d0b45.bindPopup(popup_5210488aefe62d02c39c3f981bab3524)
+        ;
+
+        
+    
+    
+            marker_1ed741e7e92b4e9d44e06475d15d0b45.bindTooltip(
+                `<div>
+                     GODDARD-RIVERSIDE
+711 Amsterdam Avenue New York, NY 10025
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c00b3ac0750efae86a51ab039b4ab8e = L.marker(
+                [40.75233371032, -73.979441520748],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_252fe92e3ba2c5e2bbaa481e8cdd6174 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0c00b3ac0750efae86a51ab039b4ab8e.setIcon(icon_252fe92e3ba2c5e2bbaa481e8cdd6174);
+        
+    
+        var popup_788df6d4721864ad319ed75446271c3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b1aa7598fead456da36986244d62873 = $(`<div id="html_2b1aa7598fead456da36986244d62873" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GOUVERNEUR GARDENS 305 Madison Avenue New York, NY l0002<br><b>No of Apartments:</b> 778</div>`)[0];
+                popup_788df6d4721864ad319ed75446271c3e.setContent(html_2b1aa7598fead456da36986244d62873);
+            
+        
+
+        marker_0c00b3ac0750efae86a51ab039b4ab8e.bindPopup(popup_788df6d4721864ad319ed75446271c3e)
+        ;
+
+        
+    
+    
+            marker_0c00b3ac0750efae86a51ab039b4ab8e.bindTooltip(
+                `<div>
+                     GOUVERNEUR GARDENS
+305 Madison Avenue New York, NY l0002
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c24c5270b168a58bcc936eae215ec5f5 = L.marker(
+                [40.791989290524, -73.968521409653],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_3a4a18e145b662c7b2fb54c8af416c95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c24c5270b168a58bcc936eae215ec5f5.setIcon(icon_3a4a18e145b662c7b2fb54c8af416c95);
+        
+    
+        var popup_af5432c9fc638974a18caf4e8fb011ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63f98cc28ddbb5a1f962e76157fe098a = $(`<div id="html_63f98cc28ddbb5a1f962e76157fe098a" style="width: 100.0%; height: 100.0%;"><b>Name:</b> JEFFERSON TOWERS 700 Columbus Avenue New York, NY 10025<br><b>No of Apartments:</b> 189</div>`)[0];
+                popup_af5432c9fc638974a18caf4e8fb011ca.setContent(html_63f98cc28ddbb5a1f962e76157fe098a);
+            
+        
+
+        marker_c24c5270b168a58bcc936eae215ec5f5.bindPopup(popup_af5432c9fc638974a18caf4e8fb011ca)
+        ;
+
+        
+    
+    
+            marker_c24c5270b168a58bcc936eae215ec5f5.bindTooltip(
+                `<div>
+                     JEFFERSON TOWERS
+700 Columbus Avenue New York, NY 10025
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73931c699a021b0fa6170cc61aabfba1 = L.marker(
+                [40.774966567184, -73.987784867169],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_8cda7bafb19d569ba884358716cd314c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_73931c699a021b0fa6170cc61aabfba1.setIcon(icon_8cda7bafb19d569ba884358716cd314c);
+        
+    
+        var popup_0acd3baf09340c7e1310d2f5d6c7578b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04806ea52e77ad56e3f7ed05a38a5ad8 = $(`<div id="html_04806ea52e77ad56e3f7ed05a38a5ad8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> LINCOLN-AMSTERDAM 110 West End Avenue New York, NY l0023<br><b>No of Apartments:</b> 168</div>`)[0];
+                popup_0acd3baf09340c7e1310d2f5d6c7578b.setContent(html_04806ea52e77ad56e3f7ed05a38a5ad8);
+            
+        
+
+        marker_73931c699a021b0fa6170cc61aabfba1.bindPopup(popup_0acd3baf09340c7e1310d2f5d6c7578b)
+        ;
+
+        
+    
+    
+            marker_73931c699a021b0fa6170cc61aabfba1.bindTooltip(
+                `<div>
+                     LINCOLN-AMSTERDAM
+110 West End Avenue New York, NY l0023
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3c1a22b19840bc2d3085962c8428b5c = L.marker(
+                [40.717130974269, -73.980410804032],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_164d0d2f19e0cc01371b1e463ef92ad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a3c1a22b19840bc2d3085962c8428b5c.setIcon(icon_164d0d2f19e0cc01371b1e463ef92ad4);
+        
+    
+        var popup_a5c5210a9dfb71ee4f0b2bc88ce94a68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac9dc9de3c643ca620101e6ef122ff96 = $(`<div id="html_ac9dc9de3c643ca620101e6ef122ff96" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MASARYK TOWERS 61 Columbia Street New York, NY 10002<br><b>No of Apartments:</b> 1,105</div>`)[0];
+                popup_a5c5210a9dfb71ee4f0b2bc88ce94a68.setContent(html_ac9dc9de3c643ca620101e6ef122ff96);
+            
+        
+
+        marker_a3c1a22b19840bc2d3085962c8428b5c.bindPopup(popup_a5c5210a9dfb71ee4f0b2bc88ce94a68)
+        ;
+
+        
+    
+    
+            marker_a3c1a22b19840bc2d3085962c8428b5c.bindTooltip(
+                `<div>
+                     MASARYK TOWERS
+61 Columbia Street New York, NY 10002
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6de20c8e3379c7e136c6e2f29a994fb = L.marker(
+                [40.814909101843, -73.935782114945],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_75c08210c50778d9912ed5ade061619d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c6de20c8e3379c7e136c6e2f29a994fb.setIcon(icon_75c08210c50778d9912ed5ade061619d);
+        
+    
+        var popup_18eaf6208233cbe36d70bc104fafd895 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cacf40c7a7556d276fe5780883e85721 = $(`<div id="html_cacf40c7a7556d276fe5780883e85721" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RIVERBEND 2289 Fifth Avenue New York, NY 10037<br><b>No of Apartments:</b> 622</div>`)[0];
+                popup_18eaf6208233cbe36d70bc104fafd895.setContent(html_cacf40c7a7556d276fe5780883e85721);
+            
+        
+
+        marker_c6de20c8e3379c7e136c6e2f29a994fb.bindPopup(popup_18eaf6208233cbe36d70bc104fafd895)
+        ;
+
+        
+    
+    
+            marker_c6de20c8e3379c7e136c6e2f29a994fb.bindTooltip(
+                `<div>
+                     RIVERBEND
+2289 Fifth Avenue New York, NY 10037
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eddb073488bd73f332f120a9ac644c9c = L.marker(
+                [40.83603019865, -73.948290093778],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_4583bff020a671b32c45f061213f1d7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eddb073488bd73f332f120a9ac644c9c.setIcon(icon_4583bff020a671b32c45f061213f1d7b);
+        
+    
+        var popup_23722486c87f6d7324f46265c24db682 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acf53f3df9708c74bd1a59eb7c65bbee = $(`<div id="html_acf53f3df9708c74bd1a59eb7c65bbee" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RIVER TERRACE 157-10 Riverside Drive West New York, NY 10032<br><b>No of Apartments:</b> 430</div>`)[0];
+                popup_23722486c87f6d7324f46265c24db682.setContent(html_acf53f3df9708c74bd1a59eb7c65bbee);
+            
+        
+
+        marker_eddb073488bd73f332f120a9ac644c9c.bindPopup(popup_23722486c87f6d7324f46265c24db682)
+        ;
+
+        
+    
+    
+            marker_eddb073488bd73f332f120a9ac644c9c.bindTooltip(
+                `<div>
+                     RIVER TERRACE
+157-10 Riverside Drive West New York, NY 10032
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_168188a901bd17e6db5899ed86d31848 = L.marker(
+                [40.793409059194, -73.969310984932],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_7e7697be8de70aded039460b942c4214 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_168188a901bd17e6db5899ed86d31848.setIcon(icon_7e7697be8de70aded039460b942c4214);
+        
+    
+        var popup_557832279562a4f3e5faf630813013b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e82a129d041485a77d9ebe66e355026 = $(`<div id="html_8e82a129d041485a77d9ebe66e355026" style="width: 100.0%; height: 100.0%;"><b>Name:</b> R.N.A. HOUSE 150-160 West 96th Street New York, NY 10025<br><b>No of Apartments:</b> 207</div>`)[0];
+                popup_557832279562a4f3e5faf630813013b3.setContent(html_8e82a129d041485a77d9ebe66e355026);
+            
+        
+
+        marker_168188a901bd17e6db5899ed86d31848.bindPopup(popup_557832279562a4f3e5faf630813013b3)
+        ;
+
+        
+    
+    
+            marker_168188a901bd17e6db5899ed86d31848.bindTooltip(
+                `<div>
+                     R.N.A. HOUSE
+150-160 West 96th Street New York, NY 10025
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45ac1af0295eeb18acc0514c68c525c7 = L.marker(
+                [40.779462117133, -73.951832872793],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_edda4fb2c218501363768fc3a8496c0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_45ac1af0295eeb18acc0514c68c525c7.setIcon(icon_edda4fb2c218501363768fc3a8496c0a);
+        
+    
+        var popup_7397e96e4737a184de208fc2fff14dab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e611bd2def01811b3087de878cc59e33 = $(`<div id="html_e611bd2def01811b3087de878cc59e33" style="width: 100.0%; height: 100.0%;"><b>Name:</b> ROSALIE MANNING 230 East 88th Street New York, NY 10028<br><b>No of Apartments:</b> 108</div>`)[0];
+                popup_7397e96e4737a184de208fc2fff14dab.setContent(html_e611bd2def01811b3087de878cc59e33);
+            
+        
+
+        marker_45ac1af0295eeb18acc0514c68c525c7.bindPopup(popup_7397e96e4737a184de208fc2fff14dab)
+        ;
+
+        
+    
+    
+            marker_45ac1af0295eeb18acc0514c68c525c7.bindTooltip(
+                `<div>
+                     ROSALIE MANNING
+230 East 88th Street New York, NY 10028
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6f99fc88d88f822230d0a57c1a1fd4a = L.marker(
+                [40.782144242331, -73.948874899162],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_07fb5ee9dabb1bc63be86cc63baf900c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b6f99fc88d88f822230d0a57c1a1fd4a.setIcon(icon_07fb5ee9dabb1bc63be86cc63baf900c);
+        
+    
+        var popup_721408d0316c6e5f8bfcc14c84d82b5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a8b9357735fabea665e6de2fc1278d1 = $(`<div id="html_0a8b9357735fabea665e6de2fc1278d1" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RUPPERT HOUSE 1779 Second Avenue New York, NY 10028<br><b>No of Apartments:</b> 652</div>`)[0];
+                popup_721408d0316c6e5f8bfcc14c84d82b5d.setContent(html_0a8b9357735fabea665e6de2fc1278d1);
+            
+        
+
+        marker_b6f99fc88d88f822230d0a57c1a1fd4a.bindPopup(popup_721408d0316c6e5f8bfcc14c84d82b5d)
+        ;
+
+        
+    
+    
+            marker_b6f99fc88d88f822230d0a57c1a1fd4a.bindTooltip(
+                `<div>
+                     RUPPERT HOUSE
+1779 Second Avenue New York, NY 10028
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dcac25ece5055ec7cb4730de637575e = L.marker(
+                [40.789149837005, -73.96991976256],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_f59402c7944175a5f5cd017a623cfafd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4dcac25ece5055ec7cb4730de637575e.setIcon(icon_f59402c7944175a5f5cd017a623cfafd);
+        
+    
+        var popup_080901ccb758349377ea19a24ea60d14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9093283aafb0e962a73cd84b8d416346 = $(`<div id="html_9093283aafb0e962a73cd84b8d416346" style="width: 100.0%; height: 100.0%;"><b>Name:</b> ST. MARTIN'S TOWERS 65 West 90th Street New York, NY 10024<br><b>No of Apartments:</b> 179</div>`)[0];
+                popup_080901ccb758349377ea19a24ea60d14.setContent(html_9093283aafb0e962a73cd84b8d416346);
+            
+        
+
+        marker_4dcac25ece5055ec7cb4730de637575e.bindPopup(popup_080901ccb758349377ea19a24ea60d14)
+        ;
+
+        
+    
+    
+            marker_4dcac25ece5055ec7cb4730de637575e.bindTooltip(
+                `<div>
+                     ST. MARTIN'S TOWERS
+65 West 90th Street New York, NY 10024
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14a8e66883201e96c7ef9eb6048abd10 = L.marker(
+                [40.79114561006, -73.967857646741],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_a100842587776fbf34ecb04e514ee3f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_14a8e66883201e96c7ef9eb6048abd10.setIcon(icon_a100842587776fbf34ecb04e514ee3f5);
+        
+    
+        var popup_54fa282bdf1b480039b8996f596a206d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46c174b76f2ab0a79c706104be6e1e8a = $(`<div id="html_46c174b76f2ab0a79c706104be6e1e8a" style="width: 100.0%; height: 100.0%;"><b>Name:</b> STRYCKER'S BAY APARTMENT 66 West 94th Street New York, NY 10025<br><b>No of Apartments:</b> 233</div>`)[0];
+                popup_54fa282bdf1b480039b8996f596a206d.setContent(html_46c174b76f2ab0a79c706104be6e1e8a);
+            
+        
+
+        marker_14a8e66883201e96c7ef9eb6048abd10.bindPopup(popup_54fa282bdf1b480039b8996f596a206d)
+        ;
+
+        
+    
+    
+            marker_14a8e66883201e96c7ef9eb6048abd10.bindTooltip(
+                `<div>
+                     STRYCKER'S BAY APARTMENT
+66 West 94th Street New York, NY 10025
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbaf63ace97b7b237a264ed987ca96c5 = L.marker(
+                [40.776363956172, -73.949483425333],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_cd43eae3b57dd24920db59b3e8d46d9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fbaf63ace97b7b237a264ed987ca96c5.setIcon(icon_cd43eae3b57dd24920db59b3e8d46d9c);
+        
+    
+        var popup_d0714277aeadf3ab3c9f41f162a60081 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39b769e32e65d0a8effb386d4b49b158 = $(`<div id="html_39b769e32e65d0a8effb386d4b49b158" style="width: 100.0%; height: 100.0%;"><b>Name:</b> TRI-FAITH 1646 First Avenue New York, NY 10028<br><b>No of Apartments:</b> 147</div>`)[0];
+                popup_d0714277aeadf3ab3c9f41f162a60081.setContent(html_39b769e32e65d0a8effb386d4b49b158);
+            
+        
+
+        marker_fbaf63ace97b7b237a264ed987ca96c5.bindPopup(popup_d0714277aeadf3ab3c9f41f162a60081)
+        ;
+
+        
+    
+    
+            marker_fbaf63ace97b7b237a264ed987ca96c5.bindTooltip(
+                `<div>
+                     TRI-FAITH
+1646 First Avenue New York, NY 10028
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e5b065ef4c99205b6d1c4c285a360c5 = L.marker(
+                [40.726228021423, -73.976999453258],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_9e7806d5226896a74ca247e32fc01dd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6e5b065ef4c99205b6d1c4c285a360c5.setIcon(icon_9e7806d5226896a74ca247e32fc01dd0);
+        
+    
+        var popup_3fe7ac77a9b5fae267024e19170a472d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a129966d2899b80ead86814146ac241d = $(`<div id="html_a129966d2899b80ead86814146ac241d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> VILLAGE EAST TOWERS 170 Avenue C New York, NY 10009<br><b>No of Apartments:</b> 427</div>`)[0];
+                popup_3fe7ac77a9b5fae267024e19170a472d.setContent(html_a129966d2899b80ead86814146ac241d);
+            
+        
+
+        marker_6e5b065ef4c99205b6d1c4c285a360c5.bindPopup(popup_3fe7ac77a9b5fae267024e19170a472d)
+        ;
+
+        
+    
+    
+            marker_6e5b065ef4c99205b6d1c4c285a360c5.bindTooltip(
+                `<div>
+                     VILLAGE EAST TOWERS
+170 Avenue C
+New York, NY 10009
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f77e2ffe84447a6bd3a4da725a9b36b9 = L.marker(
+                [40.728140226904, -73.993469138627],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_348923bd88090610f4738aa831846f1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f77e2ffe84447a6bd3a4da725a9b36b9.setIcon(icon_348923bd88090610f4738aa831846f1e);
+        
+    
+        var popup_0c3e0750ed26444a83eb00eb268b4167 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36746f9987799797e7113cc0e72361b9 = $(`<div id="html_36746f9987799797e7113cc0e72361b9" style="width: 100.0%; height: 100.0%;"><b>Name:</b> VILLAGE VIEW 15 East 4th Street New York, NY 10009<br><b>No of Apartments:</b> 1,232</div>`)[0];
+                popup_0c3e0750ed26444a83eb00eb268b4167.setContent(html_36746f9987799797e7113cc0e72361b9);
+            
+        
+
+        marker_f77e2ffe84447a6bd3a4da725a9b36b9.bindPopup(popup_0c3e0750ed26444a83eb00eb268b4167)
+        ;
+
+        
+    
+    
+            marker_f77e2ffe84447a6bd3a4da725a9b36b9.bindTooltip(
+                `<div>
+                     VILLAGE VIEW
+15 East 4th Street New York, NY 10009
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c65d50fd87b51e69f9001ff3e6af5868 = L.marker(
+                [40.727235526185, -73.999153242446],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_1e78dfa5b2857527c9f64539131ed446 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c65d50fd87b51e69f9001ff3e6af5868.setIcon(icon_1e78dfa5b2857527c9f64539131ed446);
+        
+    
+        var popup_4940bac0e9dc03f9ee6f67c5387ff7d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9290d91ba36ba917b53465418937785 = $(`<div id="html_c9290d91ba36ba917b53465418937785" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WASHINGTON SQ. SOUTHEAST 505 LaGuardia Place New York, NY 10012<br><b>No of Apartments:</b> 174</div>`)[0];
+                popup_4940bac0e9dc03f9ee6f67c5387ff7d6.setContent(html_c9290d91ba36ba917b53465418937785);
+            
+        
+
+        marker_c65d50fd87b51e69f9001ff3e6af5868.bindPopup(popup_4940bac0e9dc03f9ee6f67c5387ff7d6)
+        ;
+
+        
+    
+    
+            marker_c65d50fd87b51e69f9001ff3e6af5868.bindTooltip(
+                `<div>
+                     WASHINGTON SQ. SOUTHEAST
+505 LaGuardia Place New York, NY 10012
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c89204c8f3c54212c71e44330aaabd3 = L.marker(
+                [40.772920921805, -73.94898763576],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_269d4aec8d158ddc13e48b7dae61074e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1c89204c8f3c54212c71e44330aaabd3.setIcon(icon_269d4aec8d158ddc13e48b7dae61074e);
+        
+    
+        var popup_7c40f275e2ea1bdf99eafc5c51a5fa21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e48b24f29e8a72bb7a9a805e9be3b9b = $(`<div id="html_1e48b24f29e8a72bb7a9a805e9be3b9b" style="width: 100.0%; height: 100.0%;"><b>Name:</b> YORK HILL 1540 York Avenue New York, NY 10028<br><b>No of Apartments:</b> 296</div>`)[0];
+                popup_7c40f275e2ea1bdf99eafc5c51a5fa21.setContent(html_1e48b24f29e8a72bb7a9a805e9be3b9b);
+            
+        
+
+        marker_1c89204c8f3c54212c71e44330aaabd3.bindPopup(popup_7c40f275e2ea1bdf99eafc5c51a5fa21)
+        ;
+
+        
+    
+    
+            marker_1c89204c8f3c54212c71e44330aaabd3.bindTooltip(
+                `<div>
+                     YORK HILL
+1540 York Avenue New York, NY 10028
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_103f1c3c4dcebd457ba8efc1f6dc1d65 = L.marker(
+                [40.818789713466, -73.936747039639],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_058214a48179c9f6690cc8f51e5d542d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_103f1c3c4dcebd457ba8efc1f6dc1d65.setIcon(icon_058214a48179c9f6690cc8f51e5d542d);
+        
+    
+        var popup_13b1d39a8ef9a1e56c0de01bf44eacba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3aaabb891f28587ed8b16110f9e651d = $(`<div id="html_e3aaabb891f28587ed8b16110f9e651d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> BETHUNE TOWERS 650 Lenox Avenue New York, NY 10037<br><b>No of Apartments:</b> 133</div>`)[0];
+                popup_13b1d39a8ef9a1e56c0de01bf44eacba.setContent(html_e3aaabb891f28587ed8b16110f9e651d);
+            
+        
+
+        marker_103f1c3c4dcebd457ba8efc1f6dc1d65.bindPopup(popup_13b1d39a8ef9a1e56c0de01bf44eacba)
+        ;
+
+        
+    
+    
+            marker_103f1c3c4dcebd457ba8efc1f6dc1d65.bindTooltip(
+                `<div>
+                     BETHUNE TOWERS
+650 Lenox Avenue New York, NY 10037
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be44e489ece4315c53edadcd76c48de4 = L.marker(
+                [40.768742333524, -73.992238004688],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_6a3324de4c2e1f55ceda47e50a8376b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be44e489ece4315c53edadcd76c48de4.setIcon(icon_6a3324de4c2e1f55ceda47e50a8376b1);
+        
+    
+        var popup_5f3022a48b810437515988627e9a04d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98873d5004452f1b0df4e58fdcd297bc = $(`<div id="html_98873d5004452f1b0df4e58fdcd297bc" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CLINTON TOWERS 790 Eleventh Avenue New York, NY 10019<br><b>No of Apartments:</b> 396</div>`)[0];
+                popup_5f3022a48b810437515988627e9a04d1.setContent(html_98873d5004452f1b0df4e58fdcd297bc);
+            
+        
+
+        marker_be44e489ece4315c53edadcd76c48de4.bindPopup(popup_5f3022a48b810437515988627e9a04d1)
+        ;
+
+        
+    
+    
+            marker_be44e489ece4315c53edadcd76c48de4.bindTooltip(
+                `<div>
+                     CLINTON TOWERS
+790 Eleventh Avenue New York, NY 10019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2f57da126e8eb749770ef9240cf37be = L.marker(
+                [40.77891184519, -73.979954577042],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_f7e402c4550c95fc95b3d8cae371dc15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f2f57da126e8eb749770ef9240cf37be.setIcon(icon_f7e402c4550c95fc95b3d8cae371dc15);
+        
+    
+        var popup_fe0f4e9358db295759ce200ea9af9692 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6af0c4be07561b4e486b55b986a27f58 = $(`<div id="html_6af0c4be07561b4e486b55b986a27f58" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HAMILTON HOUSE 141 West 73rd Street New York, NY 10023<br><b>No of Apartments:</b> 183</div>`)[0];
+                popup_fe0f4e9358db295759ce200ea9af9692.setContent(html_6af0c4be07561b4e486b55b986a27f58);
+            
+        
+
+        marker_f2f57da126e8eb749770ef9240cf37be.bindPopup(popup_fe0f4e9358db295759ce200ea9af9692)
+        ;
+
+        
+    
+    
+            marker_f2f57da126e8eb749770ef9240cf37be.bindTooltip(
+                `<div>
+                     HAMILTON HOUSE
+141 West 73rd Street New York, NY 10023
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7efec5947f25b4026a876a1f2f77fdc = L.marker(
+                [40.792516428415, -73.970984431901],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_843c5d14db455811e7e258cb946e3569 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b7efec5947f25b4026a876a1f2f77fdc.setIcon(icon_843c5d14db455811e7e258cb946e3569);
+        
+    
+        var popup_1ee0ccdd1bbcd7d7473252d4d339141e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20c5d12c2cdb4a698e4ea7e3aa6b18a5 = $(`<div id="html_20c5d12c2cdb4a698e4ea7e3aa6b18a5" style="width: 100.0%; height: 100.0%;"><b>Name:</b> INDEPENDENCE HOUSE 176 West 94th Street New York, NY 10025<br><b>No of Apartments:</b> 120</div>`)[0];
+                popup_1ee0ccdd1bbcd7d7473252d4d339141e.setContent(html_20c5d12c2cdb4a698e4ea7e3aa6b18a5);
+            
+        
+
+        marker_b7efec5947f25b4026a876a1f2f77fdc.bindPopup(popup_1ee0ccdd1bbcd7d7473252d4d339141e)
+        ;
+
+        
+    
+    
+            marker_b7efec5947f25b4026a876a1f2f77fdc.bindTooltip(
+                `<div>
+                     INDEPENDENCE HOUSE
+176 West 94th Street New York, NY 10025
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_435698b0d0876066d064474b4e863859 = L.marker(
+                [40.75929, -73.99266],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_ffd18f380033fc5d3afbd1f23a2fba90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_435698b0d0876066d064474b4e863859.setIcon(icon_ffd18f380033fc5d3afbd1f23a2fba90);
+        
+    
+        var popup_640df9907fd5752e6e4b09627f726eda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7abc1259913245d6eb0ad7b3628068b7 = $(`<div id="html_7abc1259913245d6eb0ad7b3628068b7" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MANHATTAN PLAZA 400 West 43rd Street New York, NY 10036<br><b>No of Apartments:</b> 1,688</div>`)[0];
+                popup_640df9907fd5752e6e4b09627f726eda.setContent(html_7abc1259913245d6eb0ad7b3628068b7);
+            
+        
+
+        marker_435698b0d0876066d064474b4e863859.bindPopup(popup_640df9907fd5752e6e4b09627f726eda)
+        ;
+
+        
+    
+    
+            marker_435698b0d0876066d064474b4e863859.bindTooltip(
+                `<div>
+                     MANHATTAN PLAZA
+400 West 43rd Street New York, NY 10036
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5913cac9e2900e40753eea4afa21aef = L.marker(
+                [40.740468078638, -73.976167800825],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_dc65cbd6ddb0546f7104e1cab21e5a02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a5913cac9e2900e40753eea4afa21aef.setIcon(icon_dc65cbd6ddb0546f7104e1cab21e5a02);
+        
+    
+        var popup_9b0a830d1d9ce1b6e9ca513742d45cee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_275c5cb13bc73e71cba4adf77baba646 = $(`<div id="html_275c5cb13bc73e71cba4adf77baba646" style="width: 100.0%; height: 100.0%;"><b>Name:</b> PHIPPS PLAZA EAST 485 First Avenue New York, NY 10016<br><b>No of Apartments:</b> 104</div>`)[0];
+                popup_9b0a830d1d9ce1b6e9ca513742d45cee.setContent(html_275c5cb13bc73e71cba4adf77baba646);
+            
+        
+
+        marker_a5913cac9e2900e40753eea4afa21aef.bindPopup(popup_9b0a830d1d9ce1b6e9ca513742d45cee)
+        ;
+
+        
+    
+    
+            marker_a5913cac9e2900e40753eea4afa21aef.bindTooltip(
+                `<div>
+                     PHIPPS PLAZA EAST
+485 First Avenue New York, NY 10016
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b086e44db031b8ec77e81ede78c60181 = L.marker(
+                [40.728259124201, -73.977733037424],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_69f1a9dfc620655831fc7333739c5618 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b086e44db031b8ec77e81ede78c60181.setIcon(icon_69f1a9dfc620655831fc7333739c5618);
+        
+    
+        var popup_0744a4f027e691f1dabf8d9a1e2ed12a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3156ae0df03691f19ee51eb30b063c26 = $(`<div id="html_3156ae0df03691f19ee51eb30b063c26" style="width: 100.0%; height: 100.0%;"><b>Name:</b> TANYA TOWERS 620 East 13th Street New York, NY 10009 (Disabled Persons & Senior Citizens)<br><b>No of Apartments:</b> 157</div>`)[0];
+                popup_0744a4f027e691f1dabf8d9a1e2ed12a.setContent(html_3156ae0df03691f19ee51eb30b063c26);
+            
+        
+
+        marker_b086e44db031b8ec77e81ede78c60181.bindPopup(popup_0744a4f027e691f1dabf8d9a1e2ed12a)
+        ;
+
+        
+    
+    
+            marker_b086e44db031b8ec77e81ede78c60181.bindTooltip(
+                `<div>
+                     TANYA TOWERS
+620 East 13th Street New York, NY 10009 (Disabled Persons & Senior Citizens)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d305587acc8a3567e2ddf076cc378fbc = L.marker(
+                [40.792895835262, -73.96705960574],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_518e11a8afbeb89ab96483431f7f77d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d305587acc8a3567e2ddf076cc378fbc.setIcon(icon_518e11a8afbeb89ab96483431f7f77d3);
+        
+    
+        var popup_6149cc3e9102b6f59c5cd10b6a41e0d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_307e32471b4017a925dfc025ef7ac267 = $(`<div id="html_307e32471b4017a925dfc025ef7ac267" style="width: 100.0%; height: 100.0%;"><b>Name:</b> TOWER WEST 65 West 96th Street New York, NY 10025<br><b>No of Apartments:</b> 216</div>`)[0];
+                popup_6149cc3e9102b6f59c5cd10b6a41e0d2.setContent(html_307e32471b4017a925dfc025ef7ac267);
+            
+        
+
+        marker_d305587acc8a3567e2ddf076cc378fbc.bindPopup(popup_6149cc3e9102b6f59c5cd10b6a41e0d2)
+        ;
+
+        
+    
+    
+            marker_d305587acc8a3567e2ddf076cc378fbc.bindTooltip(
+                `<div>
+                     TOWER WEST
+65 West 96th Street New York, NY 10025
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_828bf644f1a2d63a966b81ebbc649409 = L.marker(
+                [40.790391448322, -73.969874332645],
+                {}
+            ).addTo(map_183fd8debfa323e621ac54fd77eac365);
+        
+    
+            var icon_24e6a9068dad22651879a29b581fc474 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_828bf644f1a2d63a966b81ebbc649409.setIcon(icon_24e6a9068dad22651879a29b581fc474);
+        
+    
+        var popup_11098029a68444bf26ead7a8d27545b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83b2fd95b1e3ba68f0e982ae42f62b0d = $(`<div id="html_83b2fd95b1e3ba68f0e982ae42f62b0d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> TRINITY HOUSE 100 West 92nd Street New York, NY 10025<br><b>No of Apartments:</b> 199</div>`)[0];
+                popup_11098029a68444bf26ead7a8d27545b3.setContent(html_83b2fd95b1e3ba68f0e982ae42f62b0d);
+            
+        
+
+        marker_828bf644f1a2d63a966b81ebbc649409.bindPopup(popup_11098029a68444bf26ead7a8d27545b3)
+        ;
+
+        
+    
+    
+            marker_828bf644f1a2d63a966b81ebbc649409.bindTooltip(
+                `<div>
+                     TRINITY HOUSE
+100 West 92nd Street New York, NY 10025
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
